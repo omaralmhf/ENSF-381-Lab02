@@ -52,6 +52,11 @@
     background-color: white;
 }
 
+#NavBar div:hover .dropdown-content a,
+#NavBar div:focus .dropdown-content a {
+    color: black !important;
+}
+
 #NavBar{
     background-color: #333333;
     color: white;
