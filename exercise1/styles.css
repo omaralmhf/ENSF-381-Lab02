@@ -25,16 +25,24 @@ body {
     text-align: center;
 }
 
+.box_text_color p,
 .box_text_color {
     color: white;
+}
+
+.box_text_color p,
+.box_text_color h2 {
     padding: 10px;
     margin: 0;
 }
 
-.box_text_color a {
+.box_text_color a,
+.box_text_color a:link,
+.box_text_color a:visited,
+.box_text_color a:hover,
+.box_text_color a:active {
     color: inherit;
 }
-
 .table {
     width: 570px;
 }
