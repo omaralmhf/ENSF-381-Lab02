@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <style>
+        .container { 
+        display: flex; 
+        border: 2px solid black; 
+        padding: 10px;
+        flex-direction: row;
+        } 
+        
+        .item { 
+        flex: 1; 
+        padding: 20px; 
+        margin: 5px; 
+        background-color: lightblue; 
+        border: 1px solid darkblue; 
+        text-align: center; 
+        } 
+        
+        .item img { 
+        width: 150px; 
+        height: 150px; 
+        display: block; 
+        margin: 0 auto 10px; 
+        } 
+        .item:nth-child(1) { 
+        order: 3; 
+        } 
+        .item:nth-child(2) { 
+        order: 1;   
+        flex: 4;
+        }
+        .item:nth-child(3) { 
+        order: 2; 
+        } 
+
+    </style>
+</head>
+<body>
+<main>
+    <div class="container">
+        <div id="div1" class="item">
+            <img src="schulich.png"> <!-- Image goes here -->
+            <h3>Schulich School of Engineering</h3>
+            <p>UCalgary's hub for innovative engineering education. </p>
+        </div>
+        <div id="div2" class="item">
+            <img src="electrical.png"> <!-- Image goes here --> 
+            <h3>Electrical Engineering</h3>
+            <p>Powering innovation in electronics and systems.</p>
+        </div>
+        <!--
+         To match the expected output, div 3 and 4 flipped
+         The Screenshots before it, are all acording to
+         the previous order.
+         -->
+        <div id="div4" class="item">
+            <img src="biomed.png"> <!-- Image goes here -->
+            <h3>Biomedical Engineering</h3>
+            <p>Engineering solutions for health and medicine.</p>
+        </div>  
+        <div id="div3" class="item">
+            <img src="chem_pet.png"> <!-- Image goes here -->
+            <h3>Chemical Engineering</h3>
+            <p>Advancing processes for a sustainable future.</p>
+        </div>  
+        <div id="div5" class="item">
+            <img src="geomatics.png"> <!-- Image goes here -->
+            <h3>Geomatics Engineering</h3>
+            <p>Mapping and analyzing the world around us.</p>
+        </div>  
+</div>
+</main>
+</body>
+</html>
